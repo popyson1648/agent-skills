@@ -1,0 +1,4 @@
+interface:
+  display_name: "Learning Resource Map"
+  short_description: "Map topics to resources with study checks."
+  default_prompt: "Use $learning-resource-map-skill to map this topic list to a learning resource."
