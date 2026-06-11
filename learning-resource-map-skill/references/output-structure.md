@@ -44,32 +44,40 @@ The learning order may differ from the source topic order. That is expected.
 
 Preserve the source topic hierarchy.
 
-Use this pattern:
+Use this heading pattern. Keep heading levels at 4 or less unless the user requests another structure:
 
 ```markdown
-## <source topic number>. <source topic title>
+## <major part, if any>
 
-対応箇所:
+### <source topic number>. <source topic title>
+
+#### 対応箇所
 
 - <target location>
 - <target location>
 
 <1-3 sentences describing what is covered.>
 
-補助学習（本書外で調べること）:
+#### 見る問題
 
-調べるキーワード:
+- <problem or exercise locator>
+
+#### 補助資料
+
+S01, S11
+
+#### 調べるキーワード
 
 - <term>
 - <term / Japanese term>
 
-確認質問:
+#### 確認質問
 
 1. <gradable question>
 2. <gradable question>
 ```
 
-Only include the supplemental block when coverage is missing, weak, or likely difficult.
+Only include `見る問題` when the target resource has relevant exercises or items. Only include `補助資料`, `調べるキーワード`, and `確認質問` when coverage is missing, weak, or likely difficult. Use `直接対応なし` under `補助資料` when no listed supplemental material directly supports the topic.
 
 ## 5. Review Checklist
 
@@ -92,14 +100,18 @@ Put these at the end:
 - target resource metadata
 - source links
 - table-of-contents sources
-- supplemental resources
+- supplemental materials numbered as `S01`, `S02`, etc.
 - known limitations
 - edition/version assumptions
+
+For supplemental materials, include the ID, title/name, URL when available, and a short purpose. Use `補助資料` for the section title in Japanese guides, not `補助学習` or `補助教材`.
 
 ## Style
 
 - Prefer prose plus short lists over large tables when the guide is for reading.
 - Use tables only for compact comparisons.
 - Keep each topic self-contained.
+- Use heading levels instead of bare label lines for repeated blocks such as `対応箇所`, `補助資料`, `調べるキーワード`, and `確認質問`.
+- Do not write redundant labels under `補助資料`; list only IDs such as `S01, S11` or `直接対応なし`.
 - Do not delete important details just to reduce length.
 - Avoid "補うこと" as a bare list of nouns; use keywords plus confirmation questions.

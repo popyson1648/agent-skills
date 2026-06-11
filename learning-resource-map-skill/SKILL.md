@@ -19,10 +19,12 @@ Create a high-quality Markdown study guide that maps a source topic list to targ
    - target resource location
    - what the learner can learn there
    - gaps or weak coverage
+   - supplemental material references when the target resource is insufficient
    - supplemental search terms when the target resource is insufficient
    - gradable confirmation questions
-6. Add appendices for source evidence, supplemental resources, and caveats.
-7. Verify that every source topic is represented and that the output is usable without reading the research notes first.
+6. Number supplemental materials in the appendix as `S01`, `S02`, etc., and cite only those numbers in each topic's `補助資料` section.
+7. Add appendices for source evidence, supplemental materials, and caveats.
+8. Verify that every source topic is represented and that the output is usable without reading the research notes first.
 
 ## When To Read References
 
@@ -36,7 +38,10 @@ Create a high-quality Markdown study guide that maps a source topic list to targ
 - Keep source-topic order for the mapping section, even if the learning order differs.
 - Move evidence, URLs, ISBN metadata, and caveats to appendices unless they are needed immediately.
 - Prefer official or primary sources for target resource metadata and table of contents.
-- Use supplemental materials when the target resource does not cover a source topic.
+- Use supplemental materials when the target resource does not cover a source topic, but present them as optional reference material rather than required learning tasks.
+- Prefer the label `補助資料` over `補助学習` or `補助教材` in Japanese guides; `補助学習` can imply required extra study.
+- Under a topic's `補助資料` heading, write only appendix IDs such as `S01, S11`; avoid redundant labels like `参照する補助資料:`.
+- Use `直接対応なし` when no listed supplemental material directly supports the topic.
 - Include Japanese terms when supporting Japanese-speaking learners and the Japanese term is common or differs from a direct English loanword.
 - Make confirmation questions concrete enough to be graded by an AI or human without guessing the intent.
 
@@ -46,8 +51,10 @@ Before finishing:
 
 - The reading order appears before the source-order mapping.
 - Every source topic and important subtopic appears in the guide.
+- Markdown heading levels are meaningful and stay within level 4 unless the user asks otherwise.
 - Each target-resource reference includes chapter, section, item, page, URL, or equivalent locator when available.
 - Missing coverage is explicit and actionable.
+- Supplemental materials are numbered in the appendix and topic-level references use only those IDs or `直接対応なし`.
 - Supplemental search terms are specific, not generic.
 - Confirmation questions ask for comparisons, traces, calculations, examples, state changes, or definitions with required terms.
 - Appendix evidence supports the resource identity and scope.

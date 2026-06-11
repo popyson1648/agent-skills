@@ -1,105 +1,76 @@
 # Research Checklist
 
-Use web research when the target resource identity, contents, edition, sections, or current availability may matter.
+Use research to make the mapping precise and defensible. Prefer primary or official sources when available.
 
-## Resource Identity
+## Target Resource Identity
 
-Confirm as many as apply:
+Record the target resource precisely:
 
-- exact title
-- subtitle
-- author/editor
-- publisher or owning organization
-- edition/version
-- publication date
-- ISBN, DOI, URL, course ID, repository, or documentation version
+- title
+- edition or version
+- author, publisher, organization, or maintainer
+- ISBN, DOI, official URL, or repository URL when available
+- publication date or last-updated date when relevant
 
-Prefer:
+## Source Topic List
 
-- official publisher pages
-- official documentation
-- official course pages
-- library/catalog metadata
-- DOI landing pages
-- repository README or release docs
+Preserve:
 
-Use secondary sources only when primary sources are unavailable, and label uncertainty.
+- topic order
+- hierarchy
+- examples in parentheses
+- illustrative learning outcomes
+- cross-references when they affect coverage
 
-## Contents and Locators
+Do not flatten subtopics if the source distinguishes them.
 
-Find reliable locators:
+## Coverage Evidence
 
-- chapter names
-- section names
-- problem numbers
-- page ranges when public and stable
-- lesson IDs
-- URL anchors
-- API reference pages
+For each source topic, decide one of:
 
-Do not invent section numbers. If only chapter-level mapping is available, say so.
+- **covered directly**: target resource has a clear chapter, section, problem, or page.
+- **covered indirectly**: target resource teaches the prerequisite or a related implementation pattern.
+- **weak coverage**: target resource mentions it or covers only part of it.
+- **not covered**: use supplemental materials.
 
-## Coverage Classification
+Capture the locator:
 
-Classify each source topic:
+- chapter
+- section
+- problem number
+- page number
+- URL anchor
+- table-of-contents entry
 
-- **direct**: target resource clearly teaches the topic.
-- **partial**: target resource teaches prerequisites, examples, or a subset.
-- **related**: target resource helps practice but does not teach the topic directly.
-- **not covered**: use supplemental resources.
+## Supplemental Materials
 
-The output does not need to show these exact labels, but the classification should drive wording.
+Add supplemental materials when:
 
-## Supplemental Resources
-
-Add supplemental resources when:
-
-- the target resource does not cover a source topic
-- coverage is too brief for the source learning outcome
-- the learner needs terminology in another language
+- the target resource is missing the topic
+- the target resource is too shallow for the learning outcome
+- terminology differs enough that learners need another reference
 - implementation practice is needed
 
 Prefer:
 
 - official docs
-- open textbooks
 - university course notes
-- stable programming contest educational pages
-- standards documents
-- reputable encyclopedia pages for terminology
+- reputable open textbooks
+- canonical algorithm sites
+- Japanese references when supporting Japanese-speaking learners
 
-For Japanese-speaking learners:
+Avoid:
 
-- Include Japanese search terms when they are common and not just a direct transliteration.
-- Include English terms too when they are standard in code, papers, or documentation.
-- Use Japanese resources for terminology and first-pass understanding when appropriate.
+- low-quality SEO summaries
+- sources with unclear authorship for technical claims
+- sources that only repeat definitions without examples
 
-Examples:
+## Caveats
 
-- `abstract data type / 抽象データ型`
-- `dictionary ADT / 辞書 ADT / 連想配列`
-- `priority queue / 優先度付きキュー`
-- `adjacency list / 隣接リスト`
-- `symbol table / シンボルテーブル`
+Add caveats only when they change how the learner should use the guide:
 
-## Evidence Appendix
-
-Put citations and links in an appendix unless the user specifically wants inline citations.
-
-Include:
-
-- source topic document path or URL
-- target resource metadata source
-- target resource contents source
-- supplemental resource links
-- edition/version assumptions
-
-## Verification
-
-Before finalizing:
-
-- Compare source topic headings against output headings.
-- Search the output for every numbered source topic.
-- Check that no supplemental block ends with only noun phrases.
-- Check that confirmation questions are concrete and gradable.
-- Check that learning order is before the mapping.
+- edition mismatch
+- translated title differences
+- topic outside the target resource scope
+- target resource is interview-oriented rather than theory-complete
+- source standard is broader than the target resource
